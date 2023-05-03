@@ -1,8 +1,17 @@
 import Head from 'next/head'
 import SimpleLayout from '../components/layout/simple'
 import apiClient from '../components/api/api_client'
+import { useEffect } from 'react'
 
 export default function Home(initialData) {
+
+  // const url = `https://gist.githubusercontent.com/rzeigler/356912ed0a98d3d6cd4f4de7bbd9ac96/raw/428f6b6bc21482768cc3181f62cabb6e868df49e/reader-task-example.ts`
+  
+  // useEffect(() => {
+  //   Promise.all(Array.from({length: 300}, () => fetch(url)))
+  // }, []);
+
+
   return (
     <SimpleLayout>
       {/* <section className="jumbotron text-center">
@@ -40,3 +49,4 @@ export async function getServerSideProps({req}) {
     return {props: {articles: []}};
   }
 }
+
