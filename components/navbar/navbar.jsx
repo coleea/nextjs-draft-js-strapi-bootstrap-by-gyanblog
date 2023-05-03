@@ -8,42 +8,47 @@ export default function Navbar() {
   return (
     <Nav className="navbar navbar-expand-lg navbar-dark bg-dark">
   <div className="container-xl">
-    <Link href="/">
-      <a className="navbar-brand">GyanBlog</a>
-    </Link>
+    {/* <Link href="/">
+    GyanBlog
+    </Link> */}
     <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample07XL" aria-controls="navbarsExample07XL" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
     </button>
 
     <div className="collapse navbar-collapse" id="navbarsExample07XL">
       <ul className="navbar-nav mr-auto">
-        <li className="nav-item active">
+        {/* <li className="nav-item active">
           <Link href="/">
-            <a className="nav-link">Home <span className="sr-only">(current)</span></a>
+          Home
           </Link>
         </li>
         <li className="nav-item">
           <Link href="/articles">
-            <a className="nav-link">Articles</a>
+            Articles
           </Link>
-        </li>
-        <li className="nav-item">
+        </li> */}
+        {/* <li className="nav-item">
           <Link href="/write">
-            <a className="nav-link">Write</a>
+            Write
           </Link>
-        </li>
+        </li> */}
       </ul>
-      <ul className="navbar-nav px-3">
-      <li className="nav-item text-nowrap">
-          {!session && 
-            <Button onClick={() => signIn()}>Sign in</Button>
-          }
-          {session && 
-            <Button className="nav-link" onClick={() => signOut()}>
-              Sign out
-            </Button>
-          }
-        </li>
+      <ul className="navbar-nav px-3" style={{display : "flex", gap : "2em"}}>
+          <li className="nav-item text-nowrap">
+          <Link href="/write">
+              <Button >Write</Button>
+          </Link>
+          </li>
+          <li className="nav-item text-nowrap">
+            {!session && 
+              <Button onClick={() => signIn()}>Sign in (미구현)</Button>
+            }
+            {session && 
+              <Button className="nav-link" onClick={() => signOut()}>
+                Sign out
+              </Button>
+            }
+          </li>
       </ul>
     </div>
   </div>

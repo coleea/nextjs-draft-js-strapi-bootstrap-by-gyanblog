@@ -12,9 +12,7 @@ export default function Articles(initialData) {
             <div className="col-md-4" key={index}>
               <div className="card mb-4 shadow-sm">
                 <Link href={`/articles/${each.slug}`}>
-                  <a>
                   <svg className="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-                  </a>
                 </Link>
                 <div className="card-body">
                   <h3>{each.title}</h3>

@@ -20,9 +20,9 @@ class Write extends Component {
             article={this.state}
           />
         </div>
-        <div className="col-4">
+        {/* <div className="col-4">
           Another col
-        </div>
+        </div> */}
       </div>
     </SimpleLayout>
     )

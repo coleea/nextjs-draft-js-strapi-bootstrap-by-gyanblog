@@ -5,7 +5,7 @@ import apiClient from '../components/api/api_client'
 export default function Home(initialData) {
   return (
     <SimpleLayout>
-      <section className="jumbotron text-center">
+      {/* <section className="jumbotron text-center">
         <div className="container">
           <h1>Subscribe to GyanBlog</h1>
           <p className="lead text-muted">
@@ -25,7 +25,7 @@ export default function Home(initialData) {
           )
         })}
       </div>
-      </div>
+      </div> */}
     </SimpleLayout>
   )
 }

@@ -22,9 +22,7 @@ export default function Article(props) {
       <h1>{props.title}</h1>
       {showEditOption && 
         <Link href={`/nodes/${props.id}/edit`}>
-          <a>
             Edit
-          </a>
         </Link>
       }
       <h4>Author: {props.author.username}</h4>
